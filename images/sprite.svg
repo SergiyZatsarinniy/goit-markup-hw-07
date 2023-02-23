@@ -139,5 +139,9 @@
                 d="M24 2 0 13.25l7.67 2.367L19.5 6.375l-8.998 10.116.007.003-.009-.003V22l4.301-4.182 5.45 1.682L24 2Z" />
             </path>
         </symbol>
+        <symbol id="burger-icon" viewBox="0 0 47 32">
+            <path fill="aqua" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965" stroke="#2E2F42"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        </symbol>
     </defs>
 </svg>
