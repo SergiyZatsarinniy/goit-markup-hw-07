@@ -256,16 +256,6 @@ body {
   padding: 0;
 }
 
-svg path {
-  fill: inherit;
-}
-
-.mobile-menu-open-icon {
-  fill: #404bbf;
-  stroke-width: 3px;
-  stroke: #31d0aa;
-}
-
 /* MAIN STUDIO */
 
 .hero {
