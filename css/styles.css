@@ -282,11 +282,47 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/people-office-bg.jpg');
+      url('../images/people-office-bg-mobile.jpg');
     background-color: var(--hero-bg-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    .overlay {
+      background-image: url('../images/people-office-bg-mobile@2x.jpg');
+    }
+
+    @media screen and (max-width: 768px) {
+      overlay {
+        background-image: url('../images/people-office-tablet-bg.jpg');
+      }
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+      screen and (min-resolution: 192dpi) and (min-width: 767px),
+      screen and (min-resolution: 2dppx) and (min-width: 767px) {
+      .overlay {
+        background-image: url('../images/people-office-tablet-bg@2x.jpg');
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      overlay {
+        background-image: url('../images/people-office-bg-desktop.jpg');
+      }
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+      screen and (min-resolution: 192dpi) and (min-width: 1200px),
+      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+      .overlay {
+        background-image: url('../images/people-office-bg-desktop@2x.jpg');
+      }
+    }
   }
 
   .hero-background {
