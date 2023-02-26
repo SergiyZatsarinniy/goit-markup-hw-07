@@ -102,6 +102,12 @@ body {
   list-style: none;
 }
 
+@media (min-width: 320px) {
+  body {
+    overscroll-behavior: none;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 428px;
@@ -118,6 +124,42 @@ body {
   @media screen and (min-width: 1200px) {
     .container {
       width: 1158px;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .overlay {
+    background-image: url('../images/people-office-bg-mobile@2x.jpg');
+  }
+
+  @media screen and (max-width: 768px) {
+    overlay {
+      background-image: url('../images/people-office-tablet-bg.jpg');
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
+    screen and (min-resolution: 192dpi) and (min-width: 767px),
+    screen and (min-resolution: 2dppx) and (min-width: 767px) {
+    .overlay {
+      background-image: url('../images/people-office-tablet-bg@2x.jpg');
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    overlay {
+      background-image: url('../images/people-office-bg-desktop.jpg');
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    .overlay {
+      background-image: url('../images/people-office-bg-desktop@2x.jpg');
     }
   }
 }
@@ -289,42 +331,6 @@ body {
     background-position: center;
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .overlay {
-      background-image: url('../images/people-office-bg-mobile@2x.jpg');
-    }
-
-    @media screen and (max-width: 768px) {
-      overlay {
-        background-image: url('../images/people-office-tablet-bg.jpg');
-      }
-    }
-
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 767px),
-      screen and (min-resolution: 192dpi) and (min-width: 767px),
-      screen and (min-resolution: 2dppx) and (min-width: 767px) {
-      .overlay {
-        background-image: url('../images/people-office-tablet-bg@2x.jpg');
-      }
-    }
-
-    @media screen and (max-width: 1200px) {
-      overlay {
-        background-image: url('../images/people-office-bg-desktop.jpg');
-      }
-    }
-
-    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-      screen and (min-resolution: 192dpi) and (min-width: 1200px),
-      screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-      .overlay {
-        background-image: url('../images/people-office-bg-desktop@2x.jpg');
-      }
-    }
-  }
-
   .hero-background {
     background-color: var(--border-bg-color);
   }
@@ -334,9 +340,9 @@ body {
     width: 496px;
     text-align: center;
     color: var(--third-text-color);
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
   }
 
