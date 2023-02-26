@@ -102,6 +102,12 @@ body {
   list-style: none;
 }
 
+@media (min-width: 320px) {
+  body {
+    overscroll-behavior: none;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 428px;
@@ -331,7 +337,7 @@ body {
 
   .main-title {
     margin: 0 auto;
-    width: 496px;
+    width: 318px;
     text-align: center;
     color: var(--third-text-color);
     font-size: 36px;
