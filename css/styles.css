@@ -68,12 +68,6 @@ button {
   margin: -1px;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* .container {
   width: 1158px;
   margin-left: auto;
@@ -89,10 +83,10 @@ body {
   background-color: var(--main-bg-color);
 }
 
-.section {
+/* .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+} */
 
 .link {
   text-decoration: none;
@@ -280,6 +274,14 @@ body {
     display: none;
   }
 
+  .What-Are-We-Doing-section {
+    display: none;
+  }
+
+  .our-advantages-list {
+    display: none;
+  }
+
   .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -311,14 +313,14 @@ body {
 
   /* -----HERO-MOBILE----- */
   .hero {
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .overlay {
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
+    height: 432px;
     max-width: 1440px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -337,7 +339,7 @@ body {
 
   .main-title {
     margin: 0 auto;
-    width: 318px;
+    width: 319px;
     text-align: center;
     color: var(--third-text-color);
     font-size: 36px;
@@ -349,7 +351,7 @@ body {
   .button-studio {
     display: block;
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 72px;
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 16px;
@@ -372,7 +374,97 @@ body {
   }
 }
 
-/* ------Mobile-menu------ */
+/* -----OUR-ADVANTAGES-MOBILE-----*/
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.our-advantages-wrap {
+  width: 396px;
+}
+
+.our-advantages-section-titles {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.our-advantages-section-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.our-advantages-section-text-mobile {
+  margin-bottom: 72px;
+}
+
+/* ------OUR-TEAM-MOBILE----- */
+
+.our-team-cards-bg {
+  background-color: var(--Our-team-section-bg-color);
+}
+
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+}
+
+.employees-card-content-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.our-team-card {
+  background-color: var(--team-card-bg-color);
+  flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.our-team-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.our-team-card-text {
+  color: var(--secondary-text-color);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+/* ------MOBILE-MENU------ */
 
 @media screen and (max-width: 767px) {
   .border-style {
@@ -389,7 +481,6 @@ body {
     left: 0;
     background-color: #ffffff;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
