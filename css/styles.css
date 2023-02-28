@@ -75,11 +75,6 @@ body {
   background-color: var(--main-bg-color);
 }
 
-/* .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-} */
-
 .link {
   text-decoration: none;
 }
@@ -660,16 +655,58 @@ img {
   margin-bottom: 8px;
 }
 
+.social-list {
+  display: flex;
+  gap: 40px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--icon-employees-bg-color);
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.social-list-icon {
+  fill: var(--light-color);
+}
+
 /* ------OUR-TEAM-TABLET----- */
 
 @media screen and (min-width: 768px) {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 104px;
+  }
+
   .our-team-card {
-    width: calc((100%-24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .employees {
     column-gap: 24px;
     row-gap: 64px;
+  }
+}
+
+/* ------OUR-TEAM-DESKTOP----- */
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .our-team-card {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .employees {
+    row-gap: 0;
   }
 }
 
@@ -956,26 +993,6 @@ img {
 
   .mail-link-item {
     margin-bottom: 48px;
-  }
-
-  .social-list {
-    display: flex;
-    gap: 40px;
-  }
-
-  .social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--icon-employees-bg-color);
-    transition: background-color var(--transition-dur-and-func);
-  }
-
-  .social-list-icon {
-    fill: var(--light-color);
   }
 }
 
