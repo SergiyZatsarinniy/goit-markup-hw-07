@@ -235,7 +235,7 @@ img {
 
 /* ------HEADER-MOBILE----- */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -565,6 +565,16 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .button-studio {
+    margin-top: 72px;
+  }
+}
+
 /* -----OUR-ADVANTAGES-MOBILE-----*/
 
 .section {
@@ -576,7 +586,7 @@ img {
   width: 396px;
 }
 
-.our-advantages-section-titles {
+.our-advantages-titles {
   font-size: 36px;
   font-weight: 700;
   line-height: calc(40 / 36);
@@ -585,7 +595,7 @@ img {
   text-align: center;
 }
 
-.our-advantages-section-text {
+.our-advantages-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -593,8 +603,72 @@ img {
   color: #434455;
 }
 
-.our-advantages-section-text-mobile {
+.our-advantages-text-mobile {
   margin-bottom: 72px;
+}
+
+/* -----OUR-ADVANTAGES-TABLET-----*/
+
+@media screen and (max-width: 1199px) {
+  .our-advantages-list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-advantages-titles {
+    text-align: start;
+  }
+  .our-advantages-wrap {
+    width: 356px;
+  }
+
+  .our-advantages-text-mobile {
+    margin: 0;
+  }
+
+  .list-of-benefits {
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 82px;
+    column-gap: 22px;
+  }
+}
+
+/* -----OUR-ADVANTAGES-DESKTOP-----*/
+
+@media screen and (min-width: 1200px) {
+  .our-advantages-list {
+    display: flex;
+    gap: 23px;
+  }
+
+  .our-advantages-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .our-advantages-wrap {
+    width: 264px;
+  }
+
+  .our-advantages-titles {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+
+  .our-advantages-text {
+    font-weight: 400;
+  }
 }
 
 /* ------OUR-TEAM-MOBILE----- */
