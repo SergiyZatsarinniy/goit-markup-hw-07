@@ -252,7 +252,7 @@ img {
   }
 }
 
-.page-header {
+.page-header-container {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -276,6 +276,10 @@ img {
 /* ----HEADER-Tablet----- */
 
 @media screen and (min-width: 768px) {
+  .page-header-container {
+    padding-bottom: 0px;
+  }
+
   .border-style {
     border-bottom: 1px solid var(--border-color);
   }
@@ -397,20 +401,6 @@ img {
 
   .menu-item:not(:last-child) {
     margin-right: 40px;
-  }
-
-  .menu-link {
-    position: relative;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
-    transition: color var(--transition-dur-and-func);
-  }
-
-  .menu-link:hover,
-  .menu-link:focus {
-    color: var(--action-color);
   }
 
   .address {
@@ -782,6 +772,21 @@ img {
   .employees {
     row-gap: 0;
   }
+}
+
+/* ------WHAT-ARE-WE-DOING-DESKTOP----- */
+
+.What-Are-We-Doing-section {
+  padding-bottom: 120px;
+}
+
+.what-are-we-doing-section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 /* ------CUSTOMERS-MOBILE------ */
