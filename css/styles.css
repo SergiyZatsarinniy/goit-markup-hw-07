@@ -113,6 +113,12 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .what-are-we-doing-section {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   overlay {
     background-image: url('../images/people-office-bg-desktop.jpg');
@@ -234,16 +240,11 @@ img {
 } */
 
 /* ------HEADER-MOBILE----- */
-
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
   .address {
-    display: none;
-  }
-
-  .What-Are-We-Doing-section {
     display: none;
   }
 
@@ -317,6 +318,7 @@ img {
   }
 
   .menu-link {
+    display: block;
     position: relative;
     font-weight: 500;
     line-height: 1.5;
@@ -338,6 +340,8 @@ img {
     position: absolute;
     top: 42px;
     display: block;
+    left: 0;
+    bottom: 0;
     content: '';
     width: 100%;
     height: 4px;
@@ -659,8 +663,32 @@ img {
   .our-advantages-text {
     font-weight: 400;
   }
-}
 
+  /* ------WHAT-ARE-WE-DOING-DESKTOP----- */
+  @media screen and (min-width: 1200px) {
+    .type-of-software {
+      display: flex;
+      gap: 24px;
+    }
+
+    .what-are-we-doing-section {
+      padding-bottom: 120px;
+    }
+
+    .what-are-we-doing-section-title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      margin-bottom: 72px;
+      text-align: center;
+    }
+  }
+
+  .what-are-we-doing-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
 /* ------OUR-TEAM-MOBILE----- */
 
 .our-team-cards-bg {
@@ -774,22 +802,8 @@ img {
   }
 }
 
-/* ------WHAT-ARE-WE-DOING-DESKTOP----- */
-
-.What-Are-We-Doing-section {
-  padding-bottom: 120px;
-}
-
-.what-are-we-doing-section-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  margin-bottom: 72px;
-  text-align: center;
-}
-
 /* ------CUSTOMERS-MOBILE------ */
+
 .customers {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -798,7 +812,8 @@ img {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  row-gap: 72px;
+  column-gap: 14px;
 }
 
 .customers-title {
@@ -810,17 +825,14 @@ img {
   margin-bottom: 72px;
 }
 
-.customers-list-mobile {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
+.customers-list-item {
+  width: calc((100% - 16px) / 2);
 }
 
 .customers-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 190px;
   height: 88px;
   border: 1px solid var(--icon-border-bg-color);
   border-radius: 4px;
@@ -831,13 +843,41 @@ img {
 
 .customers-list-icon {
   fill: currentColor;
-  width: 200px;
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
   border-color: var(--pressed-state-color);
   color: var(--pressed-state-color);
+}
+
+/* ------CUSTOMERS-TABLET----- */
+@media screen and (min-width: 768px) {
+  .customers > .container {
+    max-width: 584px;
+  }
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+/* ------CUSTOMERS-DESKTOP----- */
+@media screen and (min-width: 1200px) {
+  .customers > .container {
+    max-width: 1158px;
+  }
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 120px) / 6);
+  }
 }
 
 /* ------FOOTER-MOBILE----- */
