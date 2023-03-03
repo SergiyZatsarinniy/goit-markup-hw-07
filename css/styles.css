@@ -1,19 +1,18 @@
 :root {
   --logo-font: 'Raleway', sans-serif;
-  --action-color: #4d5ae5;
-  --accent-color: #e7e9fc;
-  --pressed-state-color: #404bbf;
   --primary-text-color: #2e2f42;
   --secondary-text-color: #434455;
   --third-text-color: #ffffff;
+  --modal-form-message-placeholder-text-color: rgba(117, 117, 117, 0.5);
+  --modal-form-checkbox-text-color: #757575;
+  --modal-input-name-text-color: #8e8f99;
+  --subscribe-form-text-input-color: rgba(255, 255, 255, 0.3);
+  --action-color: #4d5ae5;
+  --accent-color: #e7e9fc;
+  --pressed-state-color: #404bbf;
   --light-color: #f4f4fd;
   --icon-success: #31d0aa;
   --customers-icon-color: #afb1b8;
-  --modal-input-name-color: #8e8f99;
-  --modal-form-message-placeholder-text-color: rgba(117, 117, 117, 0.5);
-  --modal-form-checkbox-text-color: #757575;
-  --subscribe-form-text-input-color: rgba(255, 255, 255, 0.3);
-  --subscribe-placeholder-text-color: rgba(255, 255, 255, 0.6);
 
   --main-bg-color: #ffffff;
   --hero-bg-color: rgba(46, 47, 66, 0.7);
@@ -33,6 +32,17 @@
   --border-checkbox-color: #2e2f42;
   --subscribe-input-border-color: rgba(255, 255, 255, 0.3);
   --subscribe-input-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  --btn-portfolio-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --portfolio-card-link-active-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  --team-card-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  --mobile-menu-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  --modal-window-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 h1,
@@ -90,23 +100,21 @@ img {
 
 .container {
   max-width: 428px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 767px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -333,13 +341,20 @@ img {
 
 .main-title {
   margin: 0 auto;
-  width: 319px;
+  width: 290px;
   text-align: center;
   color: var(--third-text-color);
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 480px) {
+  .main-title {
+    font-size: 36px;
+    width: 320px;
+  }
 }
 
 .button-studio {
@@ -452,7 +467,7 @@ img {
 }
 
 .our-advantages-wrap {
-  width: 396px;
+  max-width: 396px;
 }
 
 .our-advantages-titles {
@@ -580,9 +595,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   text-align: center;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--team-card-box-shadow);
 }
 
 .our-team-social-list {
@@ -594,11 +607,8 @@ img {
 .our-team-card {
   background-color: var(--team-card-bg-color);
   width: 100%;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--team-card-box-shadow);
 }
-
 .our-team-section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -968,7 +978,7 @@ img {
     top: 0;
     left: 0;
     background-color: #ffffff;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    box-shadow: var(--mobile-menu-box-shadow);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -1049,11 +1059,17 @@ img {
 
   .contact-phone-number {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 27px;
     line-height: calc(40 / 36);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #4d5ae5;
+  }
+
+  @media screen and (min-width: 480px) {
+    .contact-phone-number {
+      font-size: 36px;
+    }
   }
 
   .contact-phone-number-item {
@@ -1096,11 +1112,9 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 392px;
   min-height: 586px;
   background-color: var(--modal-bg-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--modal-window-box-shadowbox-shadow);
   border-radius: 4px;
   padding-top: 72px;
   padding-left: 24px;
@@ -1138,8 +1152,23 @@ img {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 392px;
+    min-height: 586px;
+  }
+}
+
+/*------ MODAL-WINDOW-LAPTOP------*/
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
+}
+
 /*--------- MODAL-FORM-MOBILE ---------*/
 .modal-text {
+  font-size: 14px;
   text-align: center;
   font-weight: 500;
   line-height: 1.5;
@@ -1151,7 +1180,7 @@ img {
   flex-direction: column;
 }
 .modal-form-input {
-  width: 360px;
+  width: 316px;
   height: 40px;
   padding: 11px 16px 11px 38px;
   border: 1px solid var(--modal-input-border-color);
@@ -1172,7 +1201,7 @@ img {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  color: var(--modal-input-name-color);
+  color: var(--modal-input-name-text-color);
 }
 
 .modal-form-input-wrapper {
@@ -1198,7 +1227,7 @@ img {
 
 .modal-form-message {
   resize: none;
-  width: 100%;
+  width: 316px;
   height: 120px;
   padding-top: 8px;
   padding-left: 16px;
@@ -1221,7 +1250,7 @@ img {
 }
 
 .modal-form-check-desc {
-  font-size: 12px;
+  font-size: 11px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   color: var(--modal-form-checkbox-text-color);
@@ -1276,10 +1305,21 @@ img {
   background-color: var(--pressed-state-color);
 }
 
-/*------ MODAL-WINDOW-LAPTOP------*/
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 408px;
+@media screen and (min-width: 480px) {
+  .modal-text {
+    font-size: 16px;
+  }
+
+  .modal-form-input {
+    width: 360px;
+  }
+
+  .modal-form-message {
+    width: 360px;
+  }
+
+  .modal-form-check-desc {
+    font-size: 12px;
   }
 }
 
@@ -1305,8 +1345,7 @@ img {
   letter-spacing: 0.04em;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--btn-portfolio-box-shadow);
   transition: color var(--transition-dur-and-func),
     border-color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func);
@@ -1344,13 +1383,11 @@ img {
 }
 
 .portfolio-card-link:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: var(--portfolio-card-link-active-box-shadow);
 }
 
 .portfolio-card-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: var(--portfolio-card-link-active-box-shadow);
 }
 
 .product-thumb {
