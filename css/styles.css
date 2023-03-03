@@ -976,6 +976,9 @@ img {
     top: 0;
     left: 0;
     background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .mobile-menu.is-open {
