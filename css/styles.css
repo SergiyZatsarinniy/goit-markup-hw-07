@@ -1121,8 +1121,8 @@ img {
   box-shadow: var(--modal-window-box-shadowbox-shadow);
   border-radius: 4px;
   padding-top: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 24px;
 }
 
@@ -1167,6 +1167,8 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -1184,7 +1186,7 @@ img {
   flex-direction: column;
 }
 .modal-form-input {
-  width: 316px;
+  width: 288px;
   height: 40px;
   padding: 11px 16px 11px 38px;
   border: 1px solid var(--modal-input-border-color);
@@ -1231,7 +1233,7 @@ img {
 
 .modal-form-message {
   resize: none;
-  width: 316px;
+  width: 288px;
   height: 120px;
   padding-top: 8px;
   padding-left: 16px;
@@ -1254,7 +1256,7 @@ img {
 }
 
 .modal-form-check-desc {
-  font-size: 11px;
+  font-size: 10px;
   line-height: calc(16 / 12);
   letter-spacing: 0.04em;
   color: var(--modal-form-checkbox-text-color);
