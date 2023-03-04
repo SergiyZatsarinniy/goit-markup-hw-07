@@ -284,10 +284,6 @@ img {
     padding-bottom: 24px;
   }
 
-  .menu-item:not(:last-child) {
-    margin-right: 40px;
-  }
-
   .address {
     display: flex;
     gap: 40px;
@@ -830,7 +826,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--third-text-color);
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -838,6 +833,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 72px;
 }
 
 .social-list-footer {
@@ -942,12 +938,20 @@ img {
     column-gap: 24px;
   }
 
+  .social-links-wrap {
+    margin-top: 0;
+  }
+
   .logo-footer {
     color: var(--light-color);
   }
 
   .logo-footer-margin {
     margin-right: 0;
+  }
+
+  .logo-footer-wrap {
+    align-items: start;
   }
 
   .social-media-text {
