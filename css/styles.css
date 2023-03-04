@@ -801,6 +801,8 @@ img {
 /* ------FOOTER-MOBILE----- */
 
 .footer-bg {
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: var(--border-bg-color);
   text-align: center;
 }
@@ -931,8 +933,6 @@ img {
   }
 
   .footer-bg {
-    padding-top: 96px;
-    padding-bottom: 96px;
     text-align: start;
   }
 
