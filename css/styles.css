@@ -193,11 +193,6 @@ img {
     margin-right: 40px;
   }
 
-  .address {
-    padding-top: 24px;
-    padding-bottom: 12px;
-  }
-
   .menu-link {
     display: block;
     position: relative;
@@ -228,6 +223,11 @@ img {
     height: 4px;
     background-color: var(--pressed-state-color);
     border-radius: 2px;
+  }
+
+  .address {
+    padding-top: 24px;
+    padding-bottom: 12px;
   }
 
   .contact-phone-number {
