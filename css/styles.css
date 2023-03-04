@@ -305,7 +305,6 @@ img {
 .overlay {
   margin-left: auto;
   margin-right: auto;
-  height: 432px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
