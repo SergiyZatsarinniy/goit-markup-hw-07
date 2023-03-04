@@ -850,7 +850,6 @@ img {
 }
 
 .subscribe-form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -896,7 +895,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin: 0 auto;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
