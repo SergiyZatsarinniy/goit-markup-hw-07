@@ -91,7 +91,7 @@ body {
   list-style: none;
 }
 
-body.modal-open {
+body.modal-scroll {
   overflow: hidden;
 }
 
