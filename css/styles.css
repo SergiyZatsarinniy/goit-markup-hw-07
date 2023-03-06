@@ -1376,9 +1376,9 @@ img {
   }
 }
 
-/* MAIN PORTFOLIO */
+/*------- MAIN PORTFOLIO -------*/
 
-.projects-section {
+/* .projects-section {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -1499,4 +1499,116 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+} */
+
+/*------- MAIN-PORTFOLIO-MOBILE -------*/
+
+@media screen and (max-width: 1199px) {
+  .overlay-project-card {
+    display: none;
+  }
+}
+
+.projects-section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.btn-portfolio {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: var(--light-color);
+  color: var(--action-color);
+  font-family: inherit;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  box-shadow: var(--btn-portfolio-box-shadow);
+  transition: color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
+}
+
+.btn-wrap-start {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.btn-wrap-end {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.project-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-card:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.project-card-content-wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.project-card-title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.project-card-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/*------- MAIN-PORTFOLIO-LAPTOP -------*/
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .projects-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .btn-wrap-end {
+    margin-bottom: 64px;
+  }
+
+  .project-cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .project-card {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .project-card:not(:last-child) {
+    margin-bottom: 0px;
+  }
 }
