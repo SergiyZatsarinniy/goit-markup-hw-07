@@ -203,6 +203,8 @@ img {
   .menu-link {
     display: block;
     position: relative;
+    padding-bottom: 24px;
+    padding-top: 24px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -220,9 +222,8 @@ img {
   }
 
   .current::after {
-    position: absolute;
-    top: 46px;
     display: block;
+    position: absolute;
     left: 0;
     bottom: 0;
     content: '';
@@ -230,11 +231,6 @@ img {
     height: 4px;
     background-color: var(--pressed-state-color);
     border-radius: 2px;
-  }
-
-  .address {
-    padding-top: 24px;
-    padding-bottom: 12px;
   }
 
   .contact-phone-number {
@@ -286,11 +282,6 @@ img {
 /* ----HEADER-Desktop----- */
 
 @media screen and (min-width: 1200px) {
-  .page-nav {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
   .address {
     display: flex;
     gap: 40px;
