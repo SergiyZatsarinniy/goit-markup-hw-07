@@ -294,12 +294,19 @@ img {
 }
 
 /* -----HERO-MOBILE----- */
+
+.hero-container {
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero {
   padding-top: 112px;
   padding-bottom: 112px;
 }
 
-.overlay {
+.background {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -316,7 +323,7 @@ img {
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-  .overlay {
+  .background {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -374,8 +381,12 @@ img {
 
 /* -----HERO-TABLET----- */
 
-@media screen and (min-width: 480px) {
-  .overlay {
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 767px;
+  }
+
+  .background {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -386,7 +397,7 @@ img {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .overlay {
+    .background {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -394,9 +405,7 @@ img {
         url('../images/people-office-tablet-bg@2x.jpg');
     }
   }
-}
 
-@media screen and (min-width: 768px) {
   .hero {
     padding-top: 112px;
     padding-bottom: 108px;
@@ -412,11 +421,14 @@ img {
     margin-top: 40px;
   }
 }
-
 /* -----HERO-DESKTOP----- */
 
-@media screen and (min-width: 768px) {
-  .overlay {
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    max-width: 1440px;
+  }
+
+  .background {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -429,7 +441,7 @@ img {
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .overlay {
+    .background {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -437,10 +449,8 @@ img {
         url('../images/people-office-bg-desktop@2x.jpg');
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .overlay {
+  .background {
     height: 600px;
     max-width: 1440px;
   }
