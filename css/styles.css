@@ -1403,6 +1403,12 @@ img {
     background-color var(--transition-dur-and-func);
 }
 
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: var(--third-text-color);
+  background-color: var(--pressed-state-color);
+}
+
 .btn-wrap-start {
   display: flex;
   gap: 24px;
